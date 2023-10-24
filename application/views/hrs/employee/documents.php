@@ -20,13 +20,13 @@
                     <div class="card-body shadow-lg">
                         <div class="form-group">
                             <div class="card-title mt-4">
-                                <h5>Work experience/s</h5>
+                                <h5>List of Documents</h5>
                             </div>
 
                             <div id="row">
                                 <div class="card-title ">
-                                    <label class="fs-18" for="degree">Name and Address of Employer:<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control mt-n2" name="employer[]" id="degree" placeholder="eg: ICP Sr. High " require>
+                                    <label for="image">Copy of Resume<span class="text-danger">*</span></label>
+                                    <input type="file" class="form-control-file mt-n2" id="image" name="image" requir>
                                 </div>
 
                                 <div class="card-title ">
