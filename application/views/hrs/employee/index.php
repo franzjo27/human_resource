@@ -17,7 +17,7 @@
             <caption>Immaculate Conception Polytechnic</caption>
             <thead>
                 <tr>
-                    <th>Employee No.</th>
+                    <th>Employee ID.</th>
                     <th>Name</th>
                     <th>Designation</th>
                     <th>Options</th>
