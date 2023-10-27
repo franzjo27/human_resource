@@ -20,24 +20,16 @@
                     <div class="card-body shadow-lg">
                         <div class="form-group">
                             <div class="card-title mt-4">
-                                <h5>List of Documents</h5>
+                                <h5>Employee Documents</h5>
                             </div>
 
                             <div id="row">
                                 <div class="card-title ">
-                                    <label for="image">Copy of Resume<span class="text-danger">*</span></label>
-                                    <input type="file" class="form-control-file mt-n2" id="image" name="image" requir>
+                                <label class="fs-18" for="degree">PSA Certificate:<span class="text-danger">*</span></label>
+                                    <input type="file" class="form-control-file mt-1" id="image" name="image" requir>
                                 </div>
 
-                                <div class="card-title ">
-                                    <label class="fs-18" for="major">Position:<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control mt-n2" name="post[]" id="major" placeholder="eg: Admin" require>
-                                </div>
-
-                                <div class="card-title ">
-                                    <label class="fs-18" for="minor">Years of Service:<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control mt-n2" name="years_service[]" id="minor" placeholder="eg: 2" require>
-                                </div>
+                             
                             </div>
 
                             <div id="newinput"></div>

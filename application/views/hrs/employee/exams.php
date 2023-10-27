@@ -23,7 +23,7 @@
                                 <h5>Certifications and Government Exams Taken</h5>
                             </div>
 
-                            <div id="row">
+                            <div id="row"> <!-- calling the row for adding of form -->
                                 <div class="card-title ">
                                     <label class="fs-18" for="degree">Nature of certification/examination:<span class="text-danger">*</span></label>
                                     <input type="text" class="form-control mt-n2" name="cert[]" id="degree" placeholder="eg: Licensure Examination for Teachers " require>
