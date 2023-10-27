@@ -1,6 +1,6 @@
 <section>
     <div class="container">
-        <?php echo form_open_multipart(base_url('hr/work_exp/add'), null, 'id="" class="form-horizontal" style=""'); ?>
+        <?php echo form_open_multipart(base_url('hr/documents/psa'), null, 'id="" class="form-horizontal" style=""'); ?>
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="card mt-150">
@@ -22,17 +22,15 @@
                             <div class="card-title mt-4">
                                 <h5>Employee Documents</h5>
                             </div>
-
-                            <div id="row">
+                            <br>
+                            <div id="row" class="ml-lg-5">
                                 <div class="card-title ">
-                                <label class="fs-18" for="degree">PSA Certificate:<span class="text-danger">*</span></label>
+                                    <label class="fs-18" for="degree">PSA Certificate:<span class="text-danger">*</span></label>
                                     <input type="file" class="form-control-file mt-1" id="image" name="image" requir>
                                 </div>
-
-                             
                             </div>
 
-                            <div id="newinput"></div>
+                            <div id="newinput" class=""></div>
                             <div class="mt-5">
                                 <a class="btn btn-secondary none text-light ht" href="<?= base_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
                                 <button id="rowAdder" type="button" class="btn btn-primary ml-2">
@@ -40,8 +38,7 @@
                                     </span> ADD
                                 </button>
                                 <input type="submit" class="btn btn-primary ml-2" value="Next">
-
-                                <a class="btn btn-secondary none text-light ht" href="">Skip</a>
+                           
                             </div>
                         </div>
 
