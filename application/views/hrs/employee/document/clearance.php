@@ -1,7 +1,6 @@
 <section>
     <div class="container">
-        <?php echo form_open_multipart(base_url('hr/documents/security'), null, 'id="" class="form-horizontal" style=""'); ?>
-        <div class="row">
+              <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="card mt-150">
                     <div class="text-danger">
@@ -25,8 +24,10 @@
                             <br>
                             <div id="row" class="ml-lg-5">
                                 <div class="card-title ">
-                                    <label class="fs-18" for="degree">Police or NBI Clearance:<span class="text-danger">*</span></label>
-                                    <input type="file" class="form-control-file mt-1" id="image" name="image" requir>
+                                    <label class="fs-18" for="degree">Police or NBI Clearance and Barangay Clearance:<span class="text-danger">*</span></label>
+                                    <form action="<?= base_url('hr/documents/dependent') // base_url('cms/albums/add_image/' . $slug . '/' . $album_id) 
+                                                    ?>" class="dropzone" id="my-awesome-dropzone">
+                                    </form>
                                 </div>
                             </div>
 
@@ -49,7 +50,7 @@
 
     </div>
 
-    </form>
+
 
 
 </section>

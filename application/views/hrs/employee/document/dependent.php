@@ -26,7 +26,8 @@
                             <div id="row" class="ml-lg-2">
                                 <div class="card-title ">
                                     <label class="fs-18" for="degree">Dependent's PSA:<span class="text-danger">*</span></label>
-                                    <form action="<?= base_url('hr/documents/dependent')// base_url('cms/albums/add_image/' . $slug . '/' . $album_id) ?>" class="dropzone" id="my-awesome-dropzone">
+                                    <form action="<?= base_url('hr/documents/dependent') // base_url('cms/albums/add_image/' . $slug . '/' . $album_id) 
+                                                    ?>" class="dropzone" id="my-awesome-dropzone">
                                     </form>
                                 </div>
                             </div>
@@ -34,7 +35,8 @@
                             <div id="newinput" class=""></div>
                             <div class="mt-5">
                                 <a class="btn btn-secondary none text-light ht" href="<?= base_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
-                                <input type="submit" class="btn btn-primary ml-2" value="Next">
+                                <a class="btn btn-primary none ml-2 ht" href="<?= base_url('hr/documents/tor_diploma') ?>"> Next</a>
+                               <!--  <input type="submit" class="btn btn-primary ml-2" value="Next"> -->
                                 <a class="btn btn-secondary none text-light ht ml-2" href="">Skip</a>
                             </div>
                         </div>

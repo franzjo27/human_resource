@@ -25,7 +25,7 @@
                             <br>
                             <div id="row" class="ml-lg-2">
                                 <div class="card-title ">
-                                    <label class="fs-18" for="degree">X-Ray and Medical Certificate License:<span class="text-danger">*</span></label>
+                                    <label class="fs-18" for="degree">X-Ray and Medical Certificate:<span class="text-danger">*</span></label>
                                     <form action="<?= base_url('hr/documents/dependent')// base_url('cms/albums/add_image/' . $slug . '/' . $album_id) ?>" class="dropzone" id="my-awesome-dropzone">
                                     </form>
                                 </div>

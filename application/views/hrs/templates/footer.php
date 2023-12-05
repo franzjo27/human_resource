@@ -57,3 +57,47 @@ if (file_exists($js_path)) {
             $('#datepicker').datepicker();
         });
     </script>
+
+
+<script>
+    $(document).ready(function() {
+        $('#country').change(function() {
+            var provCode = $('#country').val();
+            if (provCode != '') {
+                $.ajax({
+                    url: "<?php echo base_url(); ?>Phil_location/fetch_state",
+                    method: "POST",
+                    data: {
+                        provCode: provCode
+                    },
+                    success: function(data) {
+                        $('#state').html(data);
+                        $('#city').html('<option value="">Select City</option>');
+                    }
+                });
+            } else {
+                $('#state').html('<option value="">Select State</option>');
+                $('#city').html('<option value="">Select City</option>');
+            }
+        });
+
+        $('#state').change(function() {
+            var citymunCode = $('#state').val();
+            if (citymunCode != '') {
+                $.ajax({
+                    url: "<?php echo base_url(); ?>Phil_location/fetch_city",
+                    method: "POST",
+                    data: {
+                        citymunCode: citymunCode
+                    },
+                    success: function(data) {
+                        $('#city').html(data);
+                    }
+                });
+            } else {
+                $('#city').html('<option value="">Select City</option>');
+            }
+        });
+
+    });
+</script>

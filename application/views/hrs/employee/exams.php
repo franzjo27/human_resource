@@ -31,7 +31,7 @@
 
                                 <div class="card-title ">
                                     <label class="fs-18" for="major">Date:<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control mt-n2" name="date[]" id="major" placeholder="eg: 0000-00-00" require>
+                                    <input type="date" class="form-control mt-n2" name="date[]" id="major" placeholder="eg: 0000-00-00" require>
                                 </div>
 
                                 <div class="card-title ">
@@ -78,7 +78,7 @@
             '</div>' +
             '<div class="card-title">' +
             '<label class="fs-18" for="major">Date:<span class="text-danger">*</span></label>' +
-            '<input type="text" class="form-control mt-n2" name="date[]" id="major" placeholder="eg: 0000-00-00" require>' +
+            '<input type="date" class="form-control mt-n2" name="date[]" id="major" placeholder="eg: 0000-00-00" require>' +
             '</div>' +
 
             '<div class="card-title ">' +

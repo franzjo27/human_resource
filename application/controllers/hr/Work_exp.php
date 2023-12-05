@@ -38,7 +38,7 @@ class Work_exp extends CI_Controller
 
             $result = $this->work_exp_model->add($data);
             if ($result) {
-                redirect('hr/work_exp');
+                redirect('hr/Documents');
             }
         }
         $this->load->view('hrs/templates/header');

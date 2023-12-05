@@ -1,10 +1,10 @@
 <?php
-class EmpDetails_model extends CI_Model
+class Employee_model extends CI_Model
 {
     public function __construct()
     {
         parent::__construct();
-        $this->emp_info                 = 'emp_info';
+        $this->emp_info = 'information';
     }
 
     public function rows()

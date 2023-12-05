@@ -10,26 +10,18 @@
             <ul class="navbar-nav ml-auto mr-5">
 
                 <li class="nav-item">
-                    <a class="nav-link underline" href="<?= site_url('human_resource')  ?>">Home</a>
+                    <a class="nav-link underline" href="<?= site_url('dashboard')  ?>">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link underline" href="<?= site_url('cms/news') ?>">Grant an access</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link underline" href="<?= site_url('cms/events') ?>">Employee</a>
-                </li>
                 <li class="nav-item ">
                     <a class="nav-link underline" href="<?= site_url('cms/calendars') ?>">Onboarding</a>
                 </li>
-                <!--        <li class="nav-item ">
-                    <a class="nav-link underline" href="<?= site_url('cms/strands') ?>">Strands</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link underline" href="<?= site_url('cms/albums') ?>">Gallery</a>
+                    <a class="nav-link underline" href="<?= site_url('cms/events') ?>">Employee</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link underline" href="<?= site_url('cms/users') ?>">Users</a>
-                </li> -->
+         
 
             </ul>
 

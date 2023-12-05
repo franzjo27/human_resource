@@ -49,7 +49,7 @@
                         <img style="width:110px" class="image-fluid d-none d-md-block d-lg-block d-xg-block mt-n3" src="<?= base_url('assets/images/icp/logo.png') ?>" alt="Immaculate Conception Polytechnic Logo">
                     </div>
                     <div class="float-left">
-                        <a class="navbar-brand none" href="<?= base_url('cms/dashboard')  ?>">
+                        <a class="navbar-brand none" href="<?= base_url('Dashboard')  ?>">
                             <div>
                                 <h3>Immaculate Conception</h3>
                             </div>

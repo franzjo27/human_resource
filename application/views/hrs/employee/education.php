@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="card-title ">
                                     <label class="fs-18" for="date_grad">Date Graduated:<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control mt-n2" name="date_grad[]" id="date_grad" placeholder="eg: yyyy-mm-dd" require>
+                                    <input type="date" class="form-control mt-n2" name="date_grad[]" id="date_grad" placeholder="eg: yyyy-mm-dd" require>
                                 </div>
                             </div>
 
@@ -94,7 +94,7 @@
             '</div>' +
             '<div class="card-title ">' +
             '<label class="fs-18" for="date_grad">Date Graduated:<span class="text-danger">*</span></label>' +
-            '<input type="text" class="form-control mt-n2" name="date_grad[]" id="date_grad" placeholder="eg: yyyy-mm-dd" require>' +
+            '<input type="date" class="form-control mt-n2" name="date_grad[]" id="date_grad" placeholder="eg: yyyy-mm-dd" require>' +
             '</div>' +
             '<button class="btn btn-danger" id="DeleteRow" type="button">Remove</button>' +
             '</div>';

@@ -23,6 +23,7 @@ class Education extends CI_Controller
 
         if ($this->form_validation->run()) {
 
+
             $degree      = $this->input->post('degree');
             $major       = $this->input->post('major');
             $minor       = $this->input->post('minor');
@@ -43,11 +44,10 @@ class Education extends CI_Controller
                     'date_created'  => date('Y-m-d')
                 );
             }
-         
+
             $result = $this->education_model->add($data);
             if ($result) {
-              //  redirect('Benifits_obligations');
-              die;
+                redirect('hr/exams');
             }
         }
 

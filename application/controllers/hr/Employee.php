@@ -4,13 +4,13 @@ class Employee extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('hr/EmpDetails_model');
+        $this->load->model('hr/Employee_model');
+        $this->load->model('Phil_location_model');
         $this->load->model('upload_model');
     }
 
     public function index()
     {
-
         $this->load->view('hrs/templates/header');
         $this->load->view('hrs/templates/nav');
         $this->load->view('hrs/employee/index');
@@ -19,9 +19,10 @@ class Employee extends CI_Controller
 
     public function empdetails()
     {
+        $data['prov'] = $this->Phil_location_model->fetch_country();
         $this->load->view('hrs/templates/header');
         $this->load->view('hrs/templates/nav');
-        $this->load->view('hrs/employee/emp_details');
+        $this->load->view('hrs/employee/emp_details', $data);
         $this->load->view('hrs/templates/footer');
     }
 
@@ -33,6 +34,7 @@ class Employee extends CI_Controller
         $this->form_validation->set_rules('prov',         'Province',       'trim|required');
         $this->form_validation->set_rules('mun',          'Municipality',   'trim|required');
         $this->form_validation->set_rules('brgy',         'Barangay',       'trim|required');
+        $this->form_validation->set_rules('street',       'Street',         'trim|required');
         $this->form_validation->set_rules('contact',      'Contact Number', 'trim|required');
         $this->form_validation->set_rules('email',        'Email Address',  'trim|required');
         $this->form_validation->set_rules('dob',          'Date of Birth',  'trim|required');
@@ -44,6 +46,7 @@ class Employee extends CI_Controller
         $this->form_validation->set_rules('height',       'Height',         'trim|required');
 
         if ($this->form_validation->run()) {
+
 
             $uploaded =  $this->upload_model->upload_image();
 
@@ -57,6 +60,7 @@ class Employee extends CI_Controller
                     'prov'          => $this->input->post('prov'),
                     'mun'           => $this->input->post('mun'),
                     'brgy'          => $this->input->post('brgy'),
+                    'street'        => $this->input->post('street'),
                     'contact'       => $this->input->post('contact'),
                     'email'         => $this->input->post('email'),
                     'dob'           => $this->input->post('dob'),
@@ -70,7 +74,7 @@ class Employee extends CI_Controller
                     'date_created'  => date('Y-m-d')
                 );
 
-                $result = $this->EmpDetails_model->add($data);
+                $result = $this->Employee_model->add($data);
 
                 if ($result) {
                     redirect('hr/benifits_obligations');
@@ -106,7 +110,7 @@ class Employee extends CI_Controller
                 'date_created'   => date('Y-m-d')
 
             );
-            $result = $this->EmpDetails_model->benifits_obligations_add($data);
+            $result = $this->Employee_model->benifits_obligations_add($data);
             if ($result) {
                 $this->load->view('hrs/templates/header');
                 $this->load->view('hrs/templates/nav');
@@ -144,7 +148,7 @@ class Employee extends CI_Controller
                 );
             }
 
-            $result = $this->EmpDetails_model->family_add($data);
+            $result = $this->Employee_model->family_add($data);
             if ($result) {
             }
         }
@@ -188,7 +192,7 @@ class Employee extends CI_Controller
                 );
             }
 
-            $result = $this->EmpDetails_model->education_add($data);
+            $result = $this->Employee_model->education_add($data);
             if ($result) {
                 redirect('Benifits_obligations');
             }
@@ -219,5 +223,5 @@ class Employee extends CI_Controller
                 );
             }
 
-            $this->EmpDetails_model->family_add($data);
+            $this->Employee_model->family_add($data);
         } */
