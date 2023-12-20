@@ -1,7 +1,7 @@
 <section>
 
     <div class="container">
-        <?php echo form_open_multipart(site_url('hr_access/grant_access/add'), null, 'id="" class="form-horizontal" style=""'); ?>
+        <?php echo form_open_multipart(site_url('hr_access/grant_access/update'), null, 'id="" class="form-horizontal" style=""'); ?>
         <div class="row">
             <div class="col-md-10 offset-md-1">
 
@@ -62,12 +62,9 @@
                                 </select>
 
                             </div>
-                
-
-
                             <p class="card-text"></p>
                             <a class="btn btn-secondary none text-light ht" href="<?= base_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
-                          
+
                             <input type="submit" class="btn btn-primary ml-2" value="Create">
                         </div>
                     </div>

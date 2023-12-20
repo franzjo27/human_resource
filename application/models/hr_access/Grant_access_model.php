@@ -29,10 +29,42 @@ class Grant_access_model extends CI_Model
         $query = $this->accounts_db->get_where('users', $where);
         return $query->result();
     }
+    public function row($id) // dto ang focusssss hahaha
+    {
+        $where = array(
+            'is_deleted' => 0,
+            'id' => $id
+        );
+
+        $query = $this->accounts_db->get_where('users', $where);
+        return $query->row();
+    }
 
     public function add($data)
     {
         $this->accounts_db->insert('users', $data);
+        return true;
+    }
+
+    public function update($id, $data)
+    {
+        $where = array(
+            'is_deleted'   => 0,
+            'id'          => $id
+        );
+
+        $this->accounts_db->update('users', $data, $where);
+        return true;
+    }
+
+    public function delete($id, $data)
+    {
+        $where = array(
+            'is_deleted'   => 0,
+            'id'           => $id
+        );
+
+        $this->accounts_db->update('users', $data, $where);
         return true;
     }
 }

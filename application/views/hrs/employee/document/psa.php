@@ -1,6 +1,6 @@
 <section>
     <div class="container">
-        <?php echo form_open_multipart(base_url('hr/documents/psa'), null, 'id="" class="form-horizontal" style=""'); ?>
+        <?php echo form_open_multipart(base_url('hr/documents/birth_cert'), null, 'id="" class="form-horizontal" style=""'); ?>
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="card mt-150">
@@ -26,19 +26,29 @@
                             <div id="row" class="ml-lg-5">
                                 <div class="card-title ">
                                     <label class="fs-18" for="degree">PSA Certificate:<span class="text-danger">*</span></label>
-                                    <input type="file" class="form-control-file mt-1" id="image" name="image" requir>
+                                    <!--  <div class="custom-file">
+                                        <input type="file" class="custom-file-input mt-1" id="customFile" name="psacert" require>
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div> -->
+
+                                  <!--   <div class="custom-file">
+                                        <input name="psacert" type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div> -->
+
+                                    <input type="file" name="image" id="">
+
                                 </div>
+
+
                             </div>
 
                             <div id="newinput" class=""></div>
                             <div class="mt-5">
                                 <a class="btn btn-secondary none text-light ht" href="<?= base_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
-                                <button id="rowAdder" type="button" class="btn btn-primary ml-2">
-                                    <span class="bi bi-plus-square-dotted">
-                                    </span> ADD
-                                </button>
-                                <input type="submit" class="btn btn-primary ml-2" value="Next">
-                           
+
+                                <input type="submit" class="btn btn-primary ml-2" value="Upload">
+
                             </div>
                         </div>
 
@@ -57,7 +67,7 @@
 
 </section>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     $("#rowAdder").click(function() {
         newRowAdd = '<div id="row">' +
             '<hr class="mt-4">' +
@@ -82,4 +92,4 @@
     $("body").on("click", "#DeleteRow", function() {
         $(this).parents("#row").remove();
     })
-</script>
+</script> -->

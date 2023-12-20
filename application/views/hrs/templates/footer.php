@@ -43,7 +43,7 @@
 <!-- datepicker -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 <?php
-$js_path = APPPATH . 'views/cms/' . $this->router->fetch_class() . '/app.php';
+$js_path = APPPATH . 'views/hrs/' . $this->router->fetch_class() . '/app.php';
 
 if (file_exists($js_path)) {
     include $js_path;
@@ -53,10 +53,11 @@ if (file_exists($js_path)) {
 ?>
 
 <script type="text/javascript">
-        $(function() {
-            $('#datepicker').datepicker();
-        });
-    </script>
+    $(function() {
+        $('#datepicker').datepicker();
+    });
+</script>
+
 
 
 <script>

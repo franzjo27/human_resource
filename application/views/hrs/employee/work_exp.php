@@ -42,14 +42,14 @@
 
                             <div id="newinput"></div>
                             <div class="mt-5">
-                                <a class="btn btn-secondary none text-light ht" href="<?= base_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
+                                <a class="btn btn-secondary none text-light ht" href="<?= site_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
                                 <button id="rowAdder" type="button" class="btn btn-primary ml-2">
                                     <span class="bi bi-plus-square-dotted">
                                     </span> ADD
                                 </button>
                                 <input type="submit" class="btn btn-primary ml-2" value="Next">
 
-                                <a class="btn btn-secondary none text-light ht" href="">Skip</a>
+                                <a class="btn btn-secondary none text-light ht" href="<?= site_url('hr/documents') ?>">Skip</a>
                             </div>
                         </div>
 
