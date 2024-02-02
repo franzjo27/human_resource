@@ -84,9 +84,10 @@ class Employee extends CI_Controller
             }
         }
 
+        $data['prov'] = $this->Phil_location_model->fetch_country();
         $this->load->view('hrs/templates/header');
         $this->load->view('hrs/templates/nav');
-        $this->load->view('hrs/employee/emp_details');
+        $this->load->view('hrs/employee/emp_details', $data);
         $this->load->view('hrs/templates/footer');
     }
 

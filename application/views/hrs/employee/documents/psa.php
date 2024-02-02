@@ -1,6 +1,6 @@
 <section>
     <div class="container">
-        <?php echo form_open_multipart(base_url('hr/documents/birth_cert'), null, 'id="" class="form-horizontal" style=""'); ?>
+        <?php echo form_open_multipart(base_url('hr/documents/psa'), null, 'id="" class="form-horizontal" style=""'); ?>
         <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="card mt-150">
@@ -45,9 +45,9 @@
 
                             <div id="newinput" class=""></div>
                             <div class="mt-5">
-                                <a class="btn btn-secondary none text-light ht" href="<?= base_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
+                                <a class="btn btn-secondary none text-light ht" href="<?= site_url('cms/news') ?>"> <i class="fa fa-rotate-left"></i>Back</a>
 
-                                <input type="submit" class="btn btn-primary ml-2" value="Upload">
+                                <input type="submit" class="btn btn-primary ml-2" name='submit' value="Upload">
 
                             </div>
                         </div>

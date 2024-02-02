@@ -19,7 +19,7 @@
                     <a class="nav-link underline" href="<?= site_url('cms/calendars') ?>">Onboarding</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link underline" href="<?= site_url('cms/events') ?>">Employee</a>
+                    <a class="nav-link underline" href="<?= site_url('hr/employee/') ?>">Employee</a>
                 </li>
          
 
